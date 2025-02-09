@@ -4,6 +4,18 @@ import random
 # Put all the functions into another file and import them
 import functions_lab05
 
+#Hero Name input and validation
+while True:
+    hero_name = input("Enter your hero's name(in two words): ").strip()
+    name_parts = hero_name.split()
+    if len(name_parts) == 2 and name_parts[0].isalpha() and name_parts[1].isalpha():
+        break
+    else:
+        print("invalid input! Please enter exactly two words containing only alphabetical characters")
+
+        #Generate short name
+        first_part, second_part = name_parts
+        short_name = first_part[:2] + second_part[:1]
 # Game Flow
 # Define two Dice
 small_dice_options = list(range(1, 7))
