@@ -1,4 +1,6 @@
 # Import the random library to use for the dice later
+#Name: karen Amadi
+#Student Number: 101511541
 import random
 
 #Define monster's power
